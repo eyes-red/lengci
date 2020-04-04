@@ -1,0 +1,35 @@
+{ 
+  "name": "分屏插件",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "manifest_version": 2,
+  "background": { 
+       "scripts": ["background.js"]
+    },
+    "permissions": [
+        "tabs"
+  ],
+  "commands":{
+    "split-screen-left":{
+      "suggested_key":{
+        "default":"Ctrl+Z",
+        "mac":"Command+Z"
+   },
+   "description":"split screen to left"
+        },
+       "split-screen-right":{
+      "suggested_key":{
+        "default":"Ctrl+C",
+        "mac":"Command+C"
+   },
+   "description":"split screen to right"
+        },
+       "split-screen-reset":{
+      "suggested_key":{
+        "default":"Ctrl+X",
+        "mac":"Command+X"
+   },
+   "description":"fullscreen"
+        }
+    }   
+}
